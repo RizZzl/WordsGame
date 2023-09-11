@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
+/* Стилизация body для центрирования элементов */
+body {
+    background-image: url('/static/assets/images/backgroundGame.jpg'); /* Путь к вашему изображению */
+    background-size: cover; /* Масштабирование изображения, чтобы оно полностью покрывало фон */
+    background-repeat: no-repeat; /* Отключение повторения изображения */
+    background-attachment: fixed; /* Фиксированный фон */
+    background-position: center center; /* Позиционирование изображения по центру */
+    font-family: 'Roboto', sans-serif; /* Пример стилей шрифта (по вашему выбору) */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Задайте фон по вашему желанию */
+
+}
+
+/* Контейнер для элементов input_line и button */
+.container {
+    display: flex;
+    flex-direction: row; /* Элементы будут в одной строке */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стилизация input_line */
+.input_line {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1; /* Занимает все доступное пространство */
+    margin-right: 10px; /* Расстояние между input_line и button */
+}
+
+/* Стилизация кнопки с градиентом */
+.button {
+    background: linear-gradient(125deg, orange, red);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(#FF4500, #FF4500);
+    border-radius: 7px;
+}
+
+/* Стилизация подсказок (hint) */
+.first_hint,
+.second_hint,
+.third_hint,
+.fourth_hint,
+.fifth_hint {
+    margin: 0; /* Выравнивание текста по центру */
+}
+
+/* Опциональные стили для input и его контейнера */
+.text p {
+    margin: 0;
+}
+
+/* Дополнительные стили по вашему усмотрению */

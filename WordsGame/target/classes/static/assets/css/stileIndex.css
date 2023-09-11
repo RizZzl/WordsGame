@@ -1,0 +1,33 @@
+/* Стилизация body для центрирования кнопки */
+body {
+    background-image: url('/static/assets/images/backgroundIndex.jpg'); /* Путь к вашему изображению */
+    background-size: cover; /* Масштабирование изображения, чтобы оно полностью покрывало фон */
+    background-repeat: no-repeat; /* Отключение повторения изображения */
+    background-attachment: fixed; /* Фиксированный фон */
+    background-position: center center; /* Позиционирование изображения по центру */
+    font-family: Arial, sans-serif; /* Пример стилей шрифта (по вашему выбору) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Фоновый цвет по вашему желанию */
+}
+
+/* Стилизация кнопки с градиентом */
+.btn {
+    background: linear-gradient(45deg, #800080, #4B0082); /* Фиолетовый градиент */
+    color: white;
+    padding: 30px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; /* Добавляем transition для плавных изменений при наведении */
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #4B0082, #800080); /* Обратный градиент при наведении */
+    border: 2px solid white; /* Белая обводка при наведении */
+    border-radius: 7px; /* Скругленные углы при наведении */
+}
